@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Oswald', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #fcdef4;
+		}
+
+		.border {
+			border: 1px solid #fa82d7;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #fa1bb9;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="calendar" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar-days"></i> Kalendarz</a>
+		<a id="org" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder"></i> 23/24 Organizacja</a>
+		<a id="orgdyr" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder"></i> 23/24 Dyrekcja</a>
+		<a id="kontrola" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user-check"></i> Kontrola</a>
+		<a id="wyplaty" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Wypłaty</a>
+		<a id="wykazy" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-ol"></i> Wykazy</a>
+		<a id="sup" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house-circle-exclamation"></i> S-U-P</a>
+		<a id="czaspp" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-person-circle-question"></i> Czas pracy PP</a>
+		<a id="czas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-clock"></i> Praca godziny</a>
+		<a id="szkolenia" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-chalkboard-user"></i> Szkolenia</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'calendar')
+				window.open("https://calendar.google.com/calendar/u/0/r?tab=rc", '_blank').focus();
+			else if (id == "org")
+				window.open("https://drive.google.com/drive/u/0/folders/1fyG589uolBE4HmN36RjReem3C9DuN7zI", '_blank').focus();
+			else if (id == "orgdyr")
+				window.open("https://drive.google.com/drive/folders/1d16nGMpgniBFg0QvolL3-uqNRDlmpKC5", '_blank').focus();
+			else if (id == "kontrola")
+				window.open("https://docs.google.com/spreadsheets/d/1sANeDrF_hMdyuFHeR4eVtAmy3H7oj8JZTxJ2hR5aW7k/edit#gid=650895296", '_blank').focus();
+			else if (id == "wyplaty")
+				window.open("https://drive.google.com/drive/folders/1zBQ2XmSwYzh6O45Cl6egliLoMMrx6aQm", '_blank').focus();
+			else if (id == "wykazy")
+				window.open("https://drive.google.com/drive/folders/1PJPptplqVjIWwo4StG4EbQU1lCf6y1A9", '_blank').focus();
+			else if (id == "sup")
+				window.open("https://docs.google.com/spreadsheets/d/1xj4DatwZ9a0hMndqBEmzQvxbACwk5yInUu-N__SIihc/edit#gid=429358720", '_blank').focus();
+			else if (id == "czaspp")
+				window.open("https://docs.google.com/spreadsheets/d/1INfteNCz3hK8RQZagO_dv5-fQZMRk3R7/edit#gid=94475879", '_blank').focus();
+			else if (id == "czas")
+				window.open("https://docs.google.com/document/d/1ERkV13e1iSM_LaRLq1sDSmW7unZeJ83HiS5dAACDlds/edit", '_blank').focus();
+			else if (id == "szkolenia")
+				window.open("https://drive.google.com/drive/folders/1m7EaLWepjMxiWZoHGieDpMTyW6NIclcb", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
