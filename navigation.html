@@ -58,6 +58,7 @@
 <body>
 
 	<nav class="navMenu  border background">
+		<a id="gazetka" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-clipboard"></i> eGazetka</a>
 		<a id="calendar" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar-days"></i> Kalendarz</a>
 		<a id="org" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder"></i> 23/24 Organizacja</a>
 		<a id="orgdyr" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder"></i> 23/24 Dyrekcja</a>
@@ -86,6 +87,8 @@
 
 			if (id == 'calendar')
 				window.open("https://calendar.google.com/calendar/u/0/r?tab=rc", '_blank').focus();
+			else if (id == "gazetka")
+				window.open("https://sites.google.com/d/1yg8R9lReQa2gxURiYTSIQXgtut-k3sdb/p/1qIlPk9T7JEvmUEBP1iZTrSMO-vBlG-1W/edit", '_blank').focus();
 			else if (id == "org")
 				window.open("https://drive.google.com/drive/u/0/folders/1fyG589uolBE4HmN36RjReem3C9DuN7zI", '_blank').focus();
 			else if (id == "orgdyr")
