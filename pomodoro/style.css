@@ -37,7 +37,7 @@ button:focus {
 
 .clock-container {
   background-color: #ffffff;
-  border: 1px #fa1bb9;
+  border: 1px solid #fa1bb9;
   width: 350px;
   border-radius: 20px;
   padding: 30px;
@@ -67,11 +67,11 @@ button:focus {
   font-size: 25px;
   text-align: center;
   padding-top: 2px;
-  background-color: rgb(150,180,175);
+  background-color: #fcdef4;
   border-radius: 10px;
   height: 40px;
   flex: 2;
-  box-shadow: 3px 3px rgb(121, 145, 141) inset;
+  box-shadow: 3px 3px #fa82d7 inset;
 }
 
 #timer-ssr {
