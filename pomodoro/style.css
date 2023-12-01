@@ -15,30 +15,30 @@ body {
 
 button,
 button:active {
-  background-color: rgb(234,178,156);
+  background-color: #fce2dc;
   border: none;
   width: 42px;
   height: 40px;
   border-radius: 100%;
   text-align: center;
-  box-shadow: 0.2em 0.2em rgb(194, 91, 44);
-  -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44);
-  -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44);
+  box-shadow: 0.2em 0.2em #ffbea1;
+  -webkit-box-shadow: 0.2em 0.2em #ffbea1;
+  -moz-box-shadow: 0.2em 0.2em #ffbea1;
 }
 
 button:focus {
   translate: 0.2em 0.2em;
-  box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
-  -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
-  -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
+  box-shadow: 0.2em 0.2em #ffbea1 inset;
+  -webkit-box-shadow: 0.2em 0.2em #ffbea1 inset;
+  -moz-box-shadow: 0.2em 0.2em #ffbea1 inset;
 }
 
 /* Clock Body */
 
 .clock-container {
   background-color: #ffffff;
-  border: 1px solid #fa1bb9;
   width: 350px;
+  border: 2px solid #fa1bb9;
   border-radius: 20px;
   padding: 30px;
   box-shadow: 10px 10px #fa1bb9;
@@ -49,10 +49,10 @@ button:focus {
 #time-left {
   font-size: 70px;
   text-align: center;
-  background-color: rgb(150,180,175);
+  background-color: #fcdef4;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 3px 3px rgb(121, 145, 141) inset;
+  box-shadow: 3px 3px #fa82d7 inset;
 }
 
 #display-controls {
@@ -103,7 +103,7 @@ button:focus {
 .session-container {
   text-align: center;
 /*   display: inline-block; */
-  border: 2px solid rgb(234,178,156);
+  border: 2px solid #fce2dc;
   padding: 10px;
   border-radius: 10px;
   width: 48%;
