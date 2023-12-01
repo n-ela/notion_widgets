@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Roboto', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #fccabe;
+		}
+
+		.border {
+			border: 1px solid #ffbea1;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #ffae86;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-clipboard"></i> Zadania</a>
+    <a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-clipboard"></i> Projekty</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar-days"></i> Notatki</a>
+		<a id="daily" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder"></i> Daily</a>
+		<a id="books" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder"></i> Books</a>
+		<a id="reading" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user-check"></i> Reading</a>
+		<a id="toread" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> To read</a>
+    <a id="watching" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-person-circle-question"></i> Watching</a>
+		<a id="plants" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-ol"></i> Rośliny</a>
+		<a id="subscription" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house-circle-exclamation"></i> Subskrypcje</a>
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'tasks')
+				window.open("https://www.notion.so/57be0fce01124fd8920b15b70ed5deb9?v=8e1864cfadf2490c9a553cb11aa63318", '_blank').focus();
+			else if (id == "projects")
+				window.open("https://www.notion.so/Zadania-ef445bb9a7a04c6fbdbe058fceb20226", '_blank').focus();
+      else if (id == "notes")
+				window.open("https://www.notion.so/Notatki-49a82de9a2fe44f281ceb1d044882716", '_blank').focus();
+			else if (id == "daily")
+				window.open("https://www.notion.so/Daily-08ba758fedd84f45940cee1b99c86b57", '_blank').focus();
+			else if (id == "books")
+				window.open("https://www.notion.so/047a81e6de4448eca0d6809871026624?v=7ecf2c7831664b37913a2eaf97a7c3c2", '_blank').focus();
+			else if (id == "reading")
+				window.open("https://www.notion.so/62442126d02f45b48875041e762fca6d?v=faac6a7c41e048f98a54561089fa9f27", '_blank').focus();
+			else if (id == "toread")
+				window.open("https://drive.google.com/drive/folders/1zBQ2XmSwYzh6O45Cl6egliLoMMrx6aQm", '_blank').focus();
+			else if (id == "plants")
+				window.open("https://www.notion.so/9cbb2655f52947b68b952c450a2f3428?v=dc7da1e5bd404a8c97e287c915e8e590", '_blank').focus();
+			else if (id == "subscription")
+				window.open("https://www.notion.so/Subskrypcje-01dd8e42784a447f8b37a69e79d0f7ea", '_blank').focus();
+			else if (id == "watching")
+				window.open("https://www.notion.so/82f52bf431ab41ef9caef5b05308f672?v=cfffcbef3fae4988819bd399b2cb3d6b", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
