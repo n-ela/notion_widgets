@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Roboto', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #fcdef4;
+		}
+
+		.border {
+			border: 1px solid #fa82d7;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #fa1bb9;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="books" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Books</a>
+		<a id="reading" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Reading log</a>
+		<a id="autorzy" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user"></i> Autorzy</a>
+    <a id="genre" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-filter"></i> Gatunki literackie</a>
+    <a id="goodreads" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-goodreads"></i> Goodreads</a>
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'books')
+				window.open("https://www.notion.so/047a81e6de4448eca0d6809871026624?v=7ecf2c7831664b37913a2eaf97a7c3c2", '_blank').focus();
+			else if (id == "reading")
+				window.open("https://www.notion.so/62442126d02f45b48875041e762fca6d?v=faac6a7c41e048f98a54561089fa9f27", '_blank').focus();
+			else if (id == "autorzy")
+				window.open("https://www.notion.so/55af5f88e2da4a479f2ebded82f9e53d?v=b33d4b3ac1364e9eaf177fbaa940260a", '_blank').focus();
+			else if (id == "genre")
+				window.open("https://www.notion.so/Genres-fbd3c51873fb4a72b96df9b858d6117f?pvs=12", '_blank').focus();
+			else if (id == "goodreads")
+				window.open("https://www.goodreads.com/", '_blank').focus()
+
+		}
+	</script>
+
+
+</body>
+
+</html>
